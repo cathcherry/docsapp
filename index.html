@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/docsapp/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/docsapp/assets/index-CjhAgSuh.js"></script>
+    <link rel="stylesheet" crossorigin href="/docsapp/assets/index-DjdjONWx.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="container">
+          <h1>Gerador de PDF</h1>
+          <p>Selecione um modelo e preencha o formulário para gerar seu PDF</p>
+        </div>
+      </header>
+      
+      <main class="container">
+        <section class="template-selection">
+          <h2>Escolha um modelo</h2>
+          <div class="templates-grid" id="templates-grid">
+            <!-- Templates will be inserted here by JavaScript -->
+          </div>
+        </section>
+
+        <section class="form-section" id="form-container">
+          <!-- Dynamic form will be inserted here -->
+          <div class="placeholder-message">
+            <p>Selecione um modelo para começar</p>
+          </div>
+        </section>
+        
+        <section class="preview-section" id="preview-container">
+          <h2>Pré-visualização</h2>
+          <div id="pdf-preview">
+            <div class="placeholder-preview">
+              <p>Sua pré-visualização aparecerá aqui após preencher o formulário</p>
+            </div>
+          </div>
+          <div class="preview-actions" id="preview-actions">
+            <button id="download-btn" class="btn primary" disabled>Baixar PDF</button>
+            <button id="edit-btn" class="btn secondary" disabled>Editar</button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <p>&copy; 2025 Gerador de PDF. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+      <!-- Toast notifications -->
+      <div id="toast-container"></div>
+    </div>
+  </body>
+</html>
